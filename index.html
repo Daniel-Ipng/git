@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Proyecto Git</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">🚀 MiProyecto</span>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <h1>Hola, soy <span class="highlight">Tu Nombre</span></h1>
+      <p class="subtitulo">Practicando Git con este proyecto simple</p>
+      <a href="#sobre-mi" class="btn">Ver más</a>
+    </section>
+
+    <section id="sobre-mi" class="tarjetas">
+      <h2>Sobre mí</h2>
+      <div class="grid">
+        <div class="tarjeta">
+          <div class="icono">💻</div>
+          <h3>Desarrollo Web</h3>
+          <p>Me gusta crear páginas web con HTML, CSS y JavaScript.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">🌿</div>
+          <h3>Git & GitHub</h3>
+          <p>Estoy aprendiendo a versionar mi código con Git.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">📚</div>
+          <h3>Aprendizaje</h3>
+          <p>Cada día aprendo algo nuevo sobre tecnología.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Quieres hablar? Escríbeme:</p>
+      <p class="email">📧 tuemail@ejemplo.com</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ para practicar Git — <span id="anio"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('anio').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
